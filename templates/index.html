@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>house</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+<div class="body">
+    <div class="title">
+        <div class="title_left">
+            豪大大
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">二手房</a></li>
+                <li><a href="{{ url_for('find_house') }}">租房</a></li>
+                <li><a href="{{ url_for('do_map') }}">地图</a></li>
+                <li><a href="#">知识</a></li>
+                <li><a href="{{ url_for('do_release') }}">发布</a></li>
+                <li class="log_reg"><a href="#" onclick="login_hide()">登录|</a><a href="#" onclick="register_hide()">|注册</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content_title">
+            <p>好想有个家！</p>
+            <p>我们只做专一的房屋出租</p>
+        </div>
+        <form action="" class="home_reserch">
+            <input type="text" class="input" placeholder="小区/公寓">
+            <input type="button" class="submit" value="搜索">
+        </form>
+        <!-- 以下为登录隐藏页面 -->
+        <div id="login_box">
+             <h1 id="login_h1">账号登录</h1>
+            <span id="login_span">没账号?去</span><a href="#" id="sign_a" onclick="login_hide()">注册.....</a><br>
+            <form action="" method="post">
+                <input class="login_input1" type="text" placeholder="请输入手机号" name="pnumber"><br>
+                <input class="login_input1" type="text" placeholder="请输入密码" id="get_pd" name="passwd"><br>
+                <input type="radio" id="log_r1" name="radio_pwd" value="remeber_pwd"><span>记住密码</span><br>
+                <input class="login_button" type="submit" value="登录" name="login_button">
+            </form>
+        </div>
+	 <!-- 以下为注册隐藏页面 -->
+        <div id="register_box">
+             <h1 id="login_h1">手机快捷注册</h1>
+            <span id="login_span">有账号?去</span><a href="#" id="sign_a" onclick="register_hide()">登录.....</a><br>
+            <form action="" method="post">
+                <input class="login_input1" type="text" placeholder="请输入手机号" name="pnumber"><br>
+                <input class="login_input1" type="text" placeholder="请输入验证码" name="inputyanzm">
+                <input class="login_input1" type="button"  value="默认：1234" name="yanzm"><br>
+                <input class="login_input1" type="text" placeholder="请输入密码" id="get_pd" name="passwd"><br>
+                <input class="login_button" type="submit" value="注册" name="register_button">
+            </form>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot_a">
+            <a href=""><img src="/static/img/oldhouse.png" alt=""></a>
+            <a href="{{ url_for('do_map') }}"><img src="/static/img/maphouse.png" alt=""></a>
+            <a href=""><img src="/static/img/gethouse.png" alt=""></a>
+        </div>
+        <div class="foot_p">
+            <p>二手房</p>
+            <p>地图找房</p>
+            <p>租房</p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var over = document.getElementsByClassName("op");
+    var sign_box = document.getElementById("register_box");
+    var log_box = document.getElementById("login_box");
+    function register_hide(){
+         log_box.style.display = 'block';
+        sign_box.style.display = 'none';
+    }
+    function succ_zhuce(){
+        alert("尼玛,注册成功了!去点击登录.....");
+    }
+    function login_hide() {
+       sign_box.style.display = 'block';
+        log_box.style.display='none';
+    }
+</script>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sign_in 注册</title>
+    <style>
+#sign_box{
+    border:2px solid;
+    width:300px;
+    height:400px;
+    position: relative;
+    left:440px;
+    top:80px;
+    background-color: rgb(255, 255, 255)
+}
+#sign_h1{
+    position: absolute;
+    font-family:'微软雅黑' ;
+    font-size: 30px;
+    left:40px;
+    margin:10px;
+    top:20px;
+}
+#sign_span{
+    position: absolute;
+    left:100px;
+    top:80px;
+}
+#sign_a{
+    color:green;
+}
+.sign_input1{
+    position: absolute;
+    left:-60px;
+    width:200px;
+    height:30px;
+    top:50px;
+    border:1.5px solid;
+}
+#msg_yz{
+    width: 120px;
+    top:90px;
+    
+}
+#get_yz{
+    width: 82px;
+    height: 35px;
+    position: absolute;
+    left:60px;
+    top:90px;
+    background-color:rgb(255, 255, 255); 
+}
+#get_pd{
+    position: absolute;
+    top:130px;
+}
+#sign_sub{
+    position: absolute;
+    top:200px;
+    left:-30px;
+    width:145px;
+    height:38px;
+    border:1px solid #64A131;
+    border-radius:5px;
+    background:#64A131;
+    color:#fff;
+    font-size:16px;
+    margin-right:10px;
+}
+    </style>
+</head>
+<body>
+    <div id="sign_box">
+        <form action="">
+            <h1 id="sign_h1">手机快捷注册</h1>
+            <span id="sign_span">已有账号?去<span><a href="log.html" id="sign_a">登录.....</a>
+            <input class="sign_input1" type="text" placeholder="请输入手机号" name="uname"><br>
+            <input class="sign_input1" type="text" placeholder="请输入验证码" id="msg_yz" name="yanzm">
+            <input class="sign_input1" type="button" id="get_yz" value="验证码1234" name="u_yz"><br>
+            <input class="sign_input1" type="text" placeholder="请输入密码" id="get_pd" name="passwd"><br>
+            <input class="sign_input1" type="button" id="sign_sub" value="注册" name="zhuce">
+        </form>
+    </div>  
+    <script>    
+    </script>
+</body>
+</html>

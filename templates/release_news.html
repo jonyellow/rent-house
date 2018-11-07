@@ -1,0 +1,171 @@
+<!doctype html>
+<html >
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <style>
+	body{align:center;background-color: rgb(241, 241, 241);}
+    .body{
+        position: absolute;
+        left: 25%;
+    }
+	form{
+        position: absolute;
+	    font:'Hiragino Sans GB';
+        overflow: hidden;
+        width: 600px;
+    }
+  	.c1{width:400px;
+		height:100px;
+		}
+	.s1{border:2px solid black;
+		width:180px;height:40px;margin-bottom:50%;
+		background-color:rgb(0,150,65);
+		position:relative;bottom:10px;color:aliceblue;
+		font-size:25px;padding:0px 10px}
+	.h11,.h12{position:relative;left:100px;
+		margin:20px
+		}
+	p,#s1,#s2{position:relative;left:150px;margin:8px}	
+	#se1,#se2,#se3,#se4,.t1,.t2,.t3{position:relative;left:150px;
+		margin:8px 0px}
+	select>option{border:100px
+	}
+	.i{position:relative;
+		left:45px;margin:0;width:100px
+	}
+	#se5{position:relative;
+		left:60px;margin:0;width:80px
+	}
+	.i2{position:relative;left:40px;
+		margin:0;width:200px;
+		vertical-align:bottom;
+	}
+	.t4{width:250px;height:100px;
+		position:relative;left:80px;top:-5px;
+		}
+	.i3{position:absolute;left:100px;
+		margin:0;width:90px
+		}
+	.i4{position:absolute;left:100px;
+		margin:0;width:150px
+		}
+	.re1{position:absolute;
+		left:250px;
+		top:680px;
+		width:100px;
+		height:38px;
+		border:1px solid #64A131;
+		border-radius:5px;
+		background:#64A131;
+		color:#fff;
+		font-size:16px;
+		margin-right:10px;}
+	.bu1{position:absolute;left:400px;
+		top:680px;
+		width:100px;
+		height:38px;
+		border:1px solid #64A131;
+		border-radius:5px;
+		background:#64A131;
+		color:#fff;
+		font-size:16px;
+		margin-right:10px;}
+  </style>
+ </head>
+ <body>
+ <div class="body">
+	 <form action="">
+			<div class="c1">
+			<img src="../static/img/logo.JPG" title="logo" class="i1"">
+			<span class="s1">发布信息</span>
+			</div>
+			<h3 class="h11">基本信息:</h3>
+			<p>
+				*出租方式:
+				<input type="radio" name="rent-way" value="整间出租">整间出租
+				<input type="radio" name="rent-way" value="单间出租">单间出租
+			</p>
+			<span id="s1">选择区域:</span>
+			<select id="se1">
+					<option name="area" value="武侯区">武侯区</option>
+				<option name="area" value="高新区">高新区</option>	
+				<option name="area" value="锦江区">锦江区</option>
+				<option name="area" value="青羊区">青羊区</option>
+				<option name="area" value="金牛区">金牛区</option>
+				<option name="area" value="青白江区">青白江区</option>
+				<option name="area" value="双流区">双流区</option>
+				<option name="area" value="成华区">成华区</option>
+				<option name="area" value="龙泉驿区">龙泉驿区</option>
+				<option name="area" value="新都区">新都区</option>
+				<option name="area" value="温江区">温江区</option>
+				<option name="area" value="郫都区">郫都区</option>
+				<option name="area" value="天府新区">天府新区</option>
+			</select>
+			<br>
+			<span id="s2">房屋类型:</span>
+			<select id="se2">
+				<option name="home_shi" value="五">五</option>
+				<option name="home_shi" value="四">四</option>
+				<option name="home_shi" value="三">三</option>
+				<option name="home_shi" value="二">二</option>
+				<option name="home_shi" value="一">一</option>
+			</select>
+			<span class="t1">室</span>
+			<select id="se3">
+				<option name="home_ting" value="三">三</option>
+				<option name="home_ting" value="二">二</option>
+				<option name="home_ting" value="一">一</option>
+			</select>
+			<span class="t2">厅</span>
+			<select id="se4">
+				<option name="home_wei" value="一">一</option>
+				<option name="home_wei" value="二">二</option>
+				<option name="home_wei" value="三">三</option>
+			</select>
+			<span class="t3">卫</span>
+			<p>租金:<input class="i" type="text" name="rent-money" placeholder="元/月" value="">
+			<select id="se5">
+				<option name="home_way" value="押一付三">押一付三</option>
+				<option name="home_way" value="押一付一">押一付一</option>
+				<option name="home_way" value="押一付四">押一付六</option>
+				<option name="home_way" value="不需要押金">不需要押金</option>
+			</select></p>
+			<p>费用内包含:
+			<input type="checkbox" name="money-inc" value="电费">电费
+			<input type="checkbox" name="money-inc" value="水费">水费
+			<input type="checkbox" name="money-inc" value="气费">气费
+			<input type="checkbox" name="money-inc" value="物业费">物业费</p>
+			<h3 class="h12">详细信息:</h3>
+			<p>*标题:
+			<input type="text" name="rent-way" value="孵化园地铁房租出租,三室一厅" class="i2">
+			</p>
+			<p>*房源描述:<br>
+			<textarea name="uinfo" class="t4" cols="100" rows="10">有空调,可住3人,环境优,装修风格精装等....</textarea>
+			</p>
+			<p>上传图片
+			<input type="file" multiple="multiple" name="rent-way" value="孵化园地铁房租出租,三室一厅" class="i5">
+			</p>
+			<p>*联系人姓名:<input type="text" name="rent_name" value="黄小姐" class="i3"></p>
+			<p>*联系人电话:<input type="text" name="rent_tel" value="15729837675" class="i3"></p>
+			<p>*身份证号码:<input type="text" name="rent_id" value="xxxxxxxxxxxxxxxxxxx" class="i4"></p>
+			<input type="reset" value="重置" name="res" class="re1" >
+			<input type="submit" value="提交"  name="butt" class="bu1">
+		</form>
+ </div>
+	<script>
+		var form = document.getElementsByTagName('form')[0];
+		var rent_tel = document.getElementsByName('rent_tel')[0];
+		form.onsubmit = function(){
+			if(rent_tel.value == ''){
+				rent_tel.innerHTML = "联系人电话不能为空";
+				console.log('联系人电话不能为空')
+				rent_tel.style.color = 'red';
+				return false
+			}
+			return true
+		} 
+	</script>
+
+ </body>
+</html>
